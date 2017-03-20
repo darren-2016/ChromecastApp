@@ -3,6 +3,7 @@
 # Control of Chromecast device from MacBook.
 #
 
+# Imports
 from __future__ import print_function
 import pychromecast
 
@@ -10,7 +11,7 @@ import pychromecast
 # Function:    mediacast
 # Description: 
 # Parameters:  mcast
-# Returns:     
+# Returns:     None
 def mediacast(mcast):
     
     mcast.play_media('http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', 'video/mp4')
@@ -27,14 +28,18 @@ def mediacast(mcast):
 # Function:    mediacaststop
 # Description: 
 # Parameters:  mcast
-# Returns:     
+# Returns:     None
 def mediacaststop(mcast):
     mcast.stop()
 
 
 ############################################################
 
-print ("Chromecast Application")
+print
+print ("**************************")
+print ("* Chromecast Application *")
+print ("**************************")
+print
 
 chromecasts = pychromecast.get_chromecasts()
 #print (chromecasts)
